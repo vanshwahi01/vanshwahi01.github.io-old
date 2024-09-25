@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/vanshwahi01.github.io/static/css/main.f855e6bc.css",
+    "main.js": "/vanshwahi01.github.io/static/js/main.aec74995.js",
+    "static/js/453.253ccfac.chunk.js": "/vanshwahi01.github.io/static/js/453.253ccfac.chunk.js",
+    "static/media/logo.svg": "/vanshwahi01.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/vanshwahi01.github.io/index.html",
+    "main.f855e6bc.css.map": "/vanshwahi01.github.io/static/css/main.f855e6bc.css.map",
+    "main.aec74995.js.map": "/vanshwahi01.github.io/static/js/main.aec74995.js.map",
+    "453.253ccfac.chunk.js.map": "/vanshwahi01.github.io/static/js/453.253ccfac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.aec74995.js"
+  ]
+}
