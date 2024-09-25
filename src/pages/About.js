@@ -3,15 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './About.css';
+import Footer from '../components/Footer'; // Import Footer
 
 const About = () => {
   return (
     <div className="about-container">
       {/* Profile Section */}
       <div className="profile-section">
-        <img src="/path-to-your-profile-picture.jpg" alt="Profile" className="profile-pic" />
+        <img src="/images/profile.jpeg" alt="Profile" className="profile-pic" title="Vansh Wahi" />
         <p className="profile-intro">
-          Hi, I'm Vansh Wahi, a software developer passionate about building innovative solutions.
+          Hi, I'm Vansh, an undergraduate student pursuing computer science and applied AI.
           Here's a little more about my educational and professional journey.
         </p>
       </div>
@@ -21,27 +22,17 @@ const About = () => {
         <h2>Education</h2>
         <div className="roadmap">
           <div className="roadmap-entry">
-            <div className="dot"></div>
-            <img src="/path-to-university-logo.png" alt="University Logo" className="school-logo" />
+            <img src="/images/waterloo.png" alt="University Logo" className="school-logo" />
             <div className="school-details">
-              <h3>University Name</h3>
-              <p>Major: Computer Science<br /> Expected Graduation: 2025</p>
+              <h3>The University of Waterloo</h3>
+              <p>Bachelor's of Computer Science with AI Specialization<br /> Expected Graduation: Aug 2026</p>
             </div>
           </div>
           <div className="roadmap-entry">
-            <div className="dot"></div>
-            <img src="/path-to-school1-logo.png" alt="School 1 Logo" className="school-logo" />
+            <img src="/images/tsrs.png" alt="School 1 Logo" className="school-logo" />
             <div className="school-details">
-              <h3>School 1</h3>
-              <p>High School Diploma<br /> Graduated: 2018</p>
-            </div>
-          </div>
-          <div className="roadmap-entry">
-            <div className="dot"></div>
-            <img src="/path-to-school2-logo.png" alt="School 2 Logo" className="school-logo" />
-            <div className="school-details">
-              <h3>School 2</h3>
-              <p>High School Diploma<br /> Graduated: 2015</p>
+              <h3>The Shri Ram School, Aravali</h3>
+              <p>High School Diploma<br /> Graduated: 2022</p>
             </div>
           </div>
         </div>
@@ -49,20 +40,34 @@ const About = () => {
 
       {/* Work Experience Section */}
       <div className="experience-section">
-        <h2>Work Experience</h2>
+        <h2>Co-op Experience</h2>
         <div className="roadmap">
-          {/* Add six experience entries here */}
           <div className="roadmap-entry">
-            <div className="dot"></div>
-            <img src="/path-to-company-logo1.png" alt="Company Logo" className="company-logo" />
+            <img src="/images/pcc.png" alt="Company Logo" className="company-logo" />
             <div className="experience-details">
-              <h3>Company Name 1</h3>
-              <p>Job Title, Location<br /> Dates: June 2020 - Present</p>
+              <h3>PointClickCare</h3>
+              <p>Software Engineer<br /> Sept 2024 - Present</p>
             </div>
           </div>
-          {/* Repeat this block for other 5 experiences */}
+          <div className="roadmap-entry">
+            <img src="/images/dawson.png" alt="Company Logo" className="company-logo" />
+            <div className="experience-details">
+              <h3>Dawson Partners</h3>
+              <p>Technology Analyst<br /> Jan - Apr 2024</p>
+            </div>
+          </div>
+          <div className="roadmap-entry">
+            <img src="/images/eon.png" alt="Company Logo" className="company-logo" />
+            <div className="experience-details">
+              <h3>EON Media Corporation</h3>
+              <p>Software Engineer<br /> May - Sept 2023</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Footer Section */}
+      <Footer /> {/* Footer placed here */}
     </div>
   );
 };
