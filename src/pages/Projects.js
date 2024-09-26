@@ -5,6 +5,7 @@ import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Projects.css';
+import Footer from '../components/Footer';
 
 const Projects = () => {
   const projects = [

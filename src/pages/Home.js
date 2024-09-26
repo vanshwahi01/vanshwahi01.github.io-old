@@ -22,10 +22,10 @@ const Home = () => {
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFileAlt} size="2x" className="icon" />
           </a>
-          <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/vanshwahi01" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="icon" />
           </a>
-          <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vanshwahi/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon" />
           </a>
         </div>
