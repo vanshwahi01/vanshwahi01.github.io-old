@@ -15,16 +15,8 @@
   background-color: #1c1c1c;
   border-radius: 10px;
   padding: 20px;
-  margin: 10px;
   text-align: center;
   color: #ffffff; /* White for text */
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-tile:hover {
-  transform: scale(1.05);
 }
 
 .project-thumbnail {
@@ -45,58 +37,23 @@
   color: white;
 }
 
-/* Custom Arrows */
-.custom-arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem; /* Adjust size to make the arrows more prominent */
-  color: #e945ff; /* Neon Purple */
-  cursor: pointer;
-  z-index: 2;
-  background: none;
-  border: none;
-  padding: 10px;
+/* Swiper Custom Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e945ff; /* Neon Purple for the arrow buttons */
+  font-size: 3rem; /* Increase arrow size */
 }
 
-.custom-arrow:hover {
-  color: white;
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white; /* Change color to white on hover */
 }
 
-.next-arrow {
-  right: -50px; /* More space on the right */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/* Custom Pagination Bullets */
+.swiper-pagination-bullet {
+  background: #e945ff;
 }
 
-.prev-arrow {
-  left: -50px; /* More space on the left */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-@media (max-width: 1024px) {
-  .project-tile {
-    width: 85%;
-  }
-  .next-arrow {
-    right: -30px;
-  }
-  .prev-arrow {
-    left: -30px;
-  }
-}
-
-@media (max-width: 600px) {
-  .project-tile {
-    width: 80%;
-  }
-  .project-thumbnail {
-    height: 150px;
-  }
-  .next-arrow, .prev-arrow {
-    font-size: 2rem;
-  }
+.swiper-pagination-bullet-active {
+  background: white;
 }
