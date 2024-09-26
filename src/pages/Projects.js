@@ -2,6 +2,26 @@ import React from 'react';
 import Slider from 'react-slick';
 import './Projects.css'; // Custom styling for projects
 
+// Custom Next Arrow Component
+const NextArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={`${className} custom-arrow next-arrow`} onClick={onClick}>
+      <span>&#10095;</span> {/* HTML entity for a right-pointing arrow */}
+    </div>
+  );
+};
+
+// Custom Previous Arrow Component
+const PrevArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={`${className} custom-arrow prev-arrow`} onClick={onClick}>
+      <span>&#10094;</span> {/* HTML entity for a left-pointing arrow */}
+    </div>
+  );
+};
+
 const Projects = () => {
   const projects = [
     {
@@ -35,16 +55,16 @@ const Projects = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Display 3 projects at a time
+    slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,  // Use custom next arrow
+    prevArrow: <PrevArrow />,  // Use custom prev arrow
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
