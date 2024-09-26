@@ -1,13 +1,15 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './Projects.css'; // Custom styling for projects
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'; // Font Awesome Icons
+import './Projects.css';
 
 // Custom Next Arrow Component
 const NextArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={`${className} custom-arrow next-arrow`} onClick={onClick}>
-      <span>&#10095;</span> {/* HTML entity for a right-pointing arrow */}
+      <FontAwesomeIcon icon={faChevronRight} />
     </div>
   );
 };
@@ -17,7 +19,7 @@ const PrevArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={`${className} custom-arrow prev-arrow`} onClick={onClick}>
-      <span>&#10094;</span> {/* HTML entity for a left-pointing arrow */}
+      <FontAwesomeIcon icon={faChevronLeft} />
     </div>
   );
 };
@@ -48,7 +50,6 @@ const Projects = () => {
       description: 'This is a brief description of Project 4.',
       link: 'https://github.com/your-username/project4',
     },
-    // Add more projects as needed
   ];
 
   const settings = {
@@ -57,8 +58,8 @@ const Projects = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,  // Use custom next arrow
-    prevArrow: <PrevArrow />,  // Use custom prev arrow
+    nextArrow: <NextArrow />, // Use custom next arrow
+    prevArrow: <PrevArrow />, // Use custom prev arrow
     responsive: [
       {
         breakpoint: 1024,

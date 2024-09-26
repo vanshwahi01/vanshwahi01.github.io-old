@@ -16,9 +16,11 @@
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
-  transition: transform 0.3s ease;
   text-align: center;
   color: #ffffff; /* White for text */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-tile:hover {
@@ -27,7 +29,7 @@
 
 .project-thumbnail {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -48,10 +50,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2.5rem; /* Adjust size to make the arrows more prominent */
   color: #e945ff; /* Neon Purple */
   cursor: pointer;
   z-index: 2;
+  background: none;
+  border: none;
+  padding: 10px;
 }
 
 .custom-arrow:hover {
@@ -59,11 +64,39 @@
 }
 
 .next-arrow {
-  right: -30px;
+  right: -50px; /* More space on the right */
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .prev-arrow {
-  left: -30px;
+  left: -50px; /* More space on the left */
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1024px) {
+  .project-tile {
+    width: 85%;
+  }
+  .next-arrow {
+    right: -30px;
+  }
+  .prev-arrow {
+    left: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-tile {
+    width: 80%;
+  }
+  .project-thumbnail {
+    height: 150px;
+  }
+  .next-arrow, .prev-arrow {
+    font-size: 2rem;
+  }
 }
