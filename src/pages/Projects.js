@@ -19,11 +19,6 @@ const Projects = () => {
       link: 'https://github.com/vanshwahi01/DeSales',
     },
     {
-      title: 'Published Research Paper',
-      description: '"3D Modelling and its Applications in Mechanical Engineering". International Journal of Scientific Research in Computer Science and Engineering, Vol 9, Issue 5, Oct 2021. Provides a detailed insight into the field of 3D Modelling and Designing in Mechanical Engineering. Different aspects of Designing, in real-world scenarios, as well as their applications have been discussed throughout this paper. 3D CAD modelling and rendering has been described in detail, along with its advances and applications under mechanical engineering and product development.',
-      link: 'https://www.isroset.org/pdf_paper_view.php?paper_id=2555&7-ISROSET-IJSRCSE-06720.pdf',
-    },
-    {
       title: 'Interactive Chess Game',
       description: 'Developed interactive chess game with xwindow graphics in C++ using object-oriented programming concepts. The game has features like move validation, checkmate detection, and pawn promotion. The game also has a feature to save and load the game state. It was part of capstone project for my major in Computer Science.',
       link: 'https://github.com/vanshwahi01/Chess-Game',
@@ -32,6 +27,11 @@ const Projects = () => {
       title: 'IBM Certified CS Badges',
       description: 'Over the course of 4 months, I earned over 11 badges from IBM by completing certified digital courses in various topics such as Artificial Intelligence, Machine Learning, IOT, Chatbot development, Into into Coding, Blockchain, Enterprise Design Thinking (Co-creator and Practitioner level), VR, AR.',
       link: 'https://drive.google.com/drive/folders/1947v3lCWL8gcMgRoHwTUvwU3faRJpgYm?usp=sharing',
+    },
+    {
+      title: 'Published Research Paper',
+      description: '"3D Modelling and its Applications in Mechanical Engineering". International Journal of Scientific Research in Computer Science and Engineering, Vol 9, Issue 5, Oct 2021. Provides a detailed insight into the field of 3D Modelling and Designing in Mechanical Engineering. Different aspects of Designing, in real-world scenarios, as well as their applications have been discussed throughout this paper. 3D CAD modelling and rendering has been described in detail, along with its advances and applications under mechanical engineering and product development.',
+      link: 'https://www.isroset.org/pdf_paper_view.php?paper_id=2555&7-ISROSET-IJSRCSE-06720.pdf',
     },
   ];
 
@@ -65,6 +65,7 @@ const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <p> Check out my LinkedIn and GitHub for more </p>
     </div>
   );
 };
