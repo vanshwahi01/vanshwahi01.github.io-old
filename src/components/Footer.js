@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <footer className={`footer ${showFooter ? 'show-footer' : ''}`}>
-      <p>All Rights Reserved. Made by Vansh Wahi</p>
+      <p>All Rights Reserved ~ Vansh Wahi</p>
     </footer>
   );
 };
