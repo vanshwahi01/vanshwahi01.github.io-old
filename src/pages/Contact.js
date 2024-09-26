@@ -54,11 +54,11 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/vanshwahi/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1eMdQolt_OC7vwxTxjrRn8cU_HUCVFzxY/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFileAlt} size="2x" />
             </a>
-            <a href="mailto:v3wahi@uwaterloo.ca">
-              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            <a href="mailto:v3wahi@uwaterloo.ca?subject=Let's Connect&body=Hi Vansh," target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
           </div>
         </div>
