@@ -24,6 +24,3 @@ yarn-error.log*
 
 # Ignore source maps
 *.map
-
-# Ignore build folder if it's being built on the server (optional)
-build/
