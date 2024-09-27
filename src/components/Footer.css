@@ -1,0 +1,20 @@
+/* Footer Styling */
+/* Sticky Footer Styling */
+.footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: #e945ff; /* Neon Purple */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+  
+  
+  .footer.show-footer {
+    bottom: 0; /* Slide up into view when the user scrolls to the bottom */
+  }
+  

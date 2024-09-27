@@ -1,0 +1,83 @@
+.home-container {
+  background-color: black;
+  color: #e945ff; /* Neon Purple */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 0;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.icon {
+  color: #e945ff; /* Neon Purple */
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ffffff; /* White on hover */
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.8;
+  animation: twinkle 2s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+  
+  .name-title {
+    font-size: 5rem;
+    margin: 0;
+  }
+  
+  .intro-paragraph {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    max-width: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .name-title {
+      font-size: 3rem;
+    }
+  
+    .intro-paragraph {
+      font-size: 1rem;
+    }
+  }
+  
+  

@@ -1,0 +1,85 @@
+/* Container for the entire About page */
+.about-container {
+  padding-top: 100px; /* Space for the navbar */
+  background-color: black;
+  color: #e945ff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #e945ff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1); /* Slight enlarge on hover */
+}
+
+.profile-intro {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Roadmap Section */
+.roadmap {
+  position: relative;
+  margin-left: 50px;
+  padding-left: 40px;
+}
+
+.roadmap-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.school-logo, .company-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.school-details, .experience-details {
+  text-align: left;
+  max-width: 600px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments for mobile view */
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .school-logo, .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-intro {
+    font-size: 1rem;
+  }
+}
